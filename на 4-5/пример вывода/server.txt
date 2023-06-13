@@ -1,1 +1,34 @@
+Server started. Listening on 127.0.0.1:8080
 
+Client connected: 127.0.0.1:12345
+Received request from client (127.0.0.1:12345): хочу поесть
+Serving food to client (127.0.0.1:12345)...
+Client (127.0.0.1:12345) can eat.
+
+Client connected: 127.0.0.1:23456
+Received request from client (127.0.0.1:23456): есть ли что-то в горшке?
+Client (127.0.0.1:23456) has to wait. The pot is empty.
+
+Client connected: 127.0.0.1:34567
+Received request from client (127.0.0.1:34567): хочу поесть
+Serving food to client (127.0.0.1:34567)...
+Client (127.0.0.1:34567) can eat.
+
+Client connected: 127.0.0.1:45678
+Received request from client (127.0.0.1:45678): есть ли что-то в горшке?
+Client (127.0.0.1:45678) has to wait. The pot is empty.
+
+Client connected: 127.0.0.1:56789
+Received request from client (127.0.0.1:56789): хочу поесть
+Serving food to client (127.0.0.1:56789)...
+Client (127.0.0.1:56789) can eat.
+
+Client connected: 127.0.0.1:67890
+Received request from client (127.0.0.1:67890): есть ли что-то в горшке?
+Client (127.0.0.1:67890) has to wait. The pot is empty.
+
+Client (127.0.0.1:23456) disconnected.
+Client disconnected: 127.0.0.1:23456
+
+Client (127.0.0.1:45678) disconnected.
+Client disconnected: 127.0.0.1:45678
