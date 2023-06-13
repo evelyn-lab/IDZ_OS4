@@ -16,13 +16,13 @@ int main(int argc, char *argv[]) {
     const char *ip = argv[1];
     int port = atoi(argv[2]);
     int maxClients = atoi(argv[3]);
-    // Create a socket
+    // Создаем сокет
     int serverSocket = socket(AF_INET, SOCK_DGRAM, 0);
     if (serverSocket < 0) {
         perror("Failed to create socket");
         return 1;
     }
-    // Server address
+    // Адрес сервера
     struct sockaddr_in serverAddr;
     serverAddr.sin_family = AF_INET;
     serverAddr.sin_port = htons(port);
@@ -39,7 +39,7 @@ int main(int argc, char *argv[]) {
 
         memset(buffer, 0, BUFFER_SIZE);
 
-        // Receive request from client
+        // Прослушиваем входящие соединения от клиентов
         int bytesRead = recvfrom(serverSocket, buffer, BUFFER_SIZE - 1, 0, (struct sockaddr *)&clientAddr, &clientAddrLen);
         if (bytesRead < 0) {
             perror("Failed to receive data from client");
@@ -50,7 +50,7 @@ int main(int argc, char *argv[]) {
         inet_ntop(AF_INET, &(clientAddr.sin_addr), clientIp, INET_ADDRSTRLEN);
         printf("Received request from client: %s:%d - %s\n", clientIp, ntohs(clientAddr.sin_port), buffer);
 
-        // Process client request
+        // Получаем запрос клиента
         if (strcmp(buffer, "хочу поесть") == 0) {
             sleep(3);
             strcpy(buffer, "можешь есть");
@@ -58,7 +58,7 @@ int main(int argc, char *argv[]) {
             strcpy(buffer, "подожди, горшок пустой");
         }
 
-        // Send response to client
+        // Отправляем ответ клиенту 
         if (sendto(serverSocket, buffer, strlen(buffer), 0, (struct sockaddr *)&clientAddr, sizeof(clientAddr)) < 0) {
             perror("Failed to send response to client");
             continue;
@@ -66,7 +66,7 @@ int main(int argc, char *argv[]) {
         printf("Sent response to client: %s:%d - %s\n", clientIp, ntohs(clientAddr.sin_port), buffer);
     }
 
-    // Close the server socket
+    // Закрываем сокет сервера
     close(serverSocket);
     return 0;
 }
