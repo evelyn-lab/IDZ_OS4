@@ -1,1 +1,43 @@
+Connected to server: 127.0.0.1:8080
 
+Client: Enter your request: хочу поесть
+Server: можешь есть
+
+Client: Enter your request: есть ли что-то в горшке?
+Server: подожди, горшок пустой
+
+Client: Enter your request: хочу поесть
+Server: можешь есть
+
+Client: Enter your request: есть ли что-то в горшке?
+Server: подожди, горшок пустой
+
+Client: Enter your request: хочу поесть
+Server: можешь есть
+
+Client: Enter your request: есть ли что-то в горшке?
+Server: подожди, горшок пустой
+
+Client: Enter your request: хочу поесть
+Server: можешь есть
+
+Client: Enter your request: есть ли что-то в горшке?
+Server: подожди, горшок пустой
+
+Client: Enter your request: хочу поесть
+Server: можешь есть
+
+Client: Enter your request: есть ли что-то в горшке?
+Server: подожди, горшок пустой
+
+Client: Enter your request: хочу поесть
+Server: можешь есть
+
+Client: Enter your request: есть ли что-то в горшке?
+Server: подожди, горшок пустой
+
+Client: Enter your request: хочу поесть
+Server: можешь есть
+
+Client: Enter your request: есть ли что-то в горшке?
+Server: подожди, горшок пустой
