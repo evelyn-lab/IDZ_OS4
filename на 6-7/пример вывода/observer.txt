@@ -1,1 +1,17 @@
-
+Connected to server
+[Observer] Client Connected - 127.0.0.1:12345
+[Observer] Received Request - хочу поесть
+[Observer] Serving Food - 127.0.0.1:12345
+[Observer] Eating: Missionary Chunk 1
+[Observer] Eating: Missionary Chunk 2
+[Observer] Eating: Missionary Chunk 3
+[Observer] Eating: Missionary Chunk 4
+[Observer] Eating: Missionary Chunk 5
+[Observer] Eating: Missionary Chunk 6
+[Observer] The pot is empty. Waking up the chef.
+[Observer] Waiting for the chef to fill the pot.
+[Observer] The pot has been refilled. Resuming eating.
+[Observer] Eating: Missionary Chunk 1
+[Observer] Eating: Missionary Chunk 2
+[Observer] Eating: Missionary Chunk 3
+[Observer] Client Disconnected - 127.0.0.1:12345
